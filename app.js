@@ -1,9 +1,13 @@
 
 
-const picks = ["Rock", "Paper", "Scissors"]
 
-function getComputerChoice (){
-  let res = Math.floor(Math.random() * picks.length);
-   console.log(res);
+
+function computerChoice (){
+  const picks = ["Rock", "Paper", "Scissors"]
+  const randomNum = [Math.floor(Math.random()*picks.length)]
+  console.log(picks[randomNum])
 }
+
+computerChoice()
+  
 
