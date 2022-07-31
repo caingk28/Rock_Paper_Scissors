@@ -39,13 +39,13 @@ const playRound = (playerSelection, computerSelection) => {
   }
 }
 
-const playerSelection = 'rock'
- 
 
 const  game = () => {
   for (let i = 0; i < 5; i++) {
+    const playerSelection = prompt('What do you want to choose?', 'rock, paper, scissors').toLowerCase()
+    const lowerPlayerSelection = playerSelection
     const computerSelection = computerChoice()
-    playRound(playerSelection, computerSelection)
+    playRound(playerSelection, computerSelection )
 } 
 
 if (playerScore > comScore){
